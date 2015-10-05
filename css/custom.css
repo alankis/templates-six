@@ -1,0 +1,218 @@
+/* *****************************************************
+
+    ** Custom Stylesheet **
+
+    Any custom styling you want to apply should be
+    defined here.
+
+***************************************************** */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans",sans-serif;
+    font-weight: 600;
+}
+
+section#header {
+    padding: 10px 0;
+    background: rgb(39,39,39);
+}
+
+section#header img {
+	/* margin-top: 15px; */
+}
+
+.navbar-main {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+}
+/* *****************************************************
+
+	** Custom Footer Styles **
+
+	Styles for custom InfoNET footer
+
+****************************************************** */
+
+section#footer  {
+	margin-bottom: 0px;
+	float: left;
+	width: 100%;
+	height: 260px;
+	background: none repeat scroll 0% 0% #272727;
+}
+section#footer .col20:first-child {
+	margin-left: 0%!important;
+}
+section#footer .col20 {
+	float: left;
+	width: 22%;
+	margin-left: 4%;
+	min-height: 220px;
+	margin-top: 40px;
+	color: #999;
+}
+section#footer .col20 h3 {
+	font-size: 18px;
+	color: #E5E5E5;
+	font-weight: 600!important;
+	margin-bottom: 27px;
+	letter-spacing: 0.02em;
+	font-family: 'Open Sans', sans-serif!important;
+}
+section#footer ul.menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+section#footer .menu li {
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	font: 13px 'Open Sans', sans-serif;
+}
+section#footer .menu li i {
+	margin-right: 4px;
+	font-weight: bold;
+}
+section#footer .menu li a {
+	color: #7c7c7c;
+	padding: 3px 0;
+	display: block;
+	text-decoration: none;
+	transition: all 0.3s ease-out;
+}
+section#footer .menu li a:before {
+	font-family: 'FontAwesome';
+	content: '\f105';
+	margin-right: 9px;
+}
+section#footer .menu li a:hover {
+	color: #e5e5e5;
+}
+section#footer p {
+	font-weight: 600;
+	line-height: 18px;
+	letter-spacing: -0.01em;
+	color: #e5e5e5;
+}
+section#footer dl {
+	font-size: 14px;
+    line-height: 18px;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+section#footer dl dt {
+	font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+    width: 38px;
+}
+section#footer dl dd {
+	color: #e5e5e5;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+section#footer dl dd span {
+	color: #999;
+}
+/* coyright */
+.copyright-info {
+	float: left;
+	padding: 15px 0 15px;
+	margin: 0;
+	width: 100%;	
+	background: #222;
+	z-index: 2;
+	font-size: 12px;
+	color: #727272!important;
+	font-style: normal;
+	font-weight: normal;
+}
+.copyright-info p {
+	height: 12px;
+	line-height: 26px!important;
+	padding: 0px;
+	margin: 0;
+	font: 13px 'Open Sans', sans-serif;
+	font-weight: normal;
+	color: #727272;
+}
+.copyright-info a {
+	margin-top: 10px;
+	font-size: 12px;
+	color: #727272;
+	text-align: right;
+	text-decoration: none; 
+	border-bottom: 1px #727272 dotted;
+	transition: all 0.3s ease-out
+}
+.copyright-info a:hover {
+	color: #E5E5E5;
+	border-bottom: 1px #E5E5E5 dotted;
+}
+.copyright-info .col70 {
+	width: 74%;
+}
+section#footer .copyright-info .col20 {
+	width: 26%;
+	position: relative;
+	float: right;
+	text-align: right;
+	margin: 0;
+	min-height: 0px!important;
+}
+ul.footer-social-links {
+	/*float: right;*/
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.footer-social-links li {
+	float: left;
+}
+.footer-social-links li a {
+	background-color: #7a7c82;
+	display: block;
+	text-align: center;
+	width: 24px;
+	height: 24px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	margin: 0 10px 0 0;
+	border: none!important;
+	text-decoration: none!important;
+}
+.footer-social-links li a:hover i {
+	color: #fff;
+	border: none!important;
+	text-decoration: none!important;
+}
+.footer-social-links li a.facebook:hover {
+	background-color: #3b5998;
+}
+.footer-social-links li a.twitter:hover {
+	background-color: #4099FF;
+}
+.footer-social-links li i {
+	color: #21242e;
+}
+.footer-social-links .fa {
+	margin: 5px 0px;
+}
+ul.footer-payment-links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.footer-payment-links li {
+	float: left;
+	height: 30px;
+	padding: 0;
+}
+.footer-payment-links li img {
+	display: inline-block;
+	height: 30px;
+	margin: 0px;
+	padding: 0px 5px;
+}

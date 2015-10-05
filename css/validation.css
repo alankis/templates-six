@@ -1,0 +1,25 @@
+.whmcscontainer fieldset.onecol label.error {
+	float: none;
+	margin-left: 10px;
+	color: red;
+  	width: auto;
+  	display: inline;
+  	font-weight: normal;
+  	font-style: italic;
+}
+
+.form-horizontal .help-block {
+	  color: #737373;
+}
+
+.btn-disabled {
+	border: none;
+	background-color: rgba(0, 140, 179, 0.5)!important;
+	cursor:not-allowed;
+}
+
+.btn-disabled:hover {
+	border: none;
+	background-color: rgba(0, 140, 179, 0.5)!important;
+	cursor:not-allowed;
+}

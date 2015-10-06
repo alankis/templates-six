@@ -30,11 +30,6 @@ $template->assign('domain_type', $domain_type);
         {/if}
 
         <h3>{$LANG.overview}</h3>
-        {if $domain_type}
-            <p>.eu domena</p>
-        {else}
-            <p>Ostale domene</p>
-        {/if}
 
         {if $lockstatus eq "unlocked" && $domain_type eq '0'}
             {capture name="domainUnlockedMsg"}<strong>{$LANG.domaincurrentlyunlocked}</strong><br />{$LANG.domaincurrentlyunlockedexp}{/capture}

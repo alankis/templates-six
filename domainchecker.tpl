@@ -58,7 +58,24 @@
                 <div class="panel-heading" role="tab" id="heading{$tldCategory->id}">
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse{$tldCategory->id}" aria-expanded="{if $tldCategory@first}true{else}false{/if}" aria-controls="collapse{$tldCategory->id}" class="domain-tld-pricing-category">
-                            {$tldCategory->category} {$LANG.tldpricing}
+                            {if $tldCategory->category eq 'Popular'}
+                                Cijene popularnih vršnih domena
+                            {elseif $tldCategory->category eq 'gTLD'}
+                                Cijene općih vršnih domena
+                            {elseif $tldCategory->category eq 'ccTLD'}
+                                Cijene nacionalnih vršnih domena
+                            {elseif $tldCategory->category eq 'Specialty'}
+                                Cijene specijalnih vršnih domena
+                            {elseif $tldCategory->category eq 'Sponsored'}
+                                Cijene sponzoriranih vršnih domena
+                            {elseif $tldCategory->category eq 'Other'}
+                                Cijene ostalih vršnih domena
+                            {elseif $tldCategory->category eq 'Geography'}
+                                Cijene geografskih vršnih domena
+                            {else}
+                                {$tldCategory}
+                            {/if}
+
                         </a>
                     </h4>
                 </div>

@@ -1,3 +1,19 @@
+{php}
+//error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+
+// get domain template variable
+$domain = $template->get_template_vars('domain');
+
+  
+        $domain_extension = '/(\.eu$)/';
+        $domain_type = preg_match($domain_extension, $domain);
+       
+$template->assign('domain_type', $domain_type);
+{/php}
+
+{if $warnings}
+    {include file="$template/includes/alert.tpl" type="warning" msg=$warnings textcenter=true}
+{/if}
 {if $registrarcustombuttonresult=="success"}
     {include file="$template/includes/alert.tpl" type="success" msg=$LANG.moduleactionsuccess textcenter=true}
 {elseif $registrarcustombuttonresult}
@@ -14,8 +30,13 @@
         {/if}
 
         <h3>{$LANG.overview}</h3>
+        {if $domain_type}
+            <p>.eu domena</p>
+        {else}
+            <p>Ostale domene</p>
+        {/if}
 
-        {if $lockstatus eq "unlocked"}
+        {if $lockstatus eq "unlocked" && $domain_type eq '0'}
             {capture name="domainUnlockedMsg"}<strong>{$LANG.domaincurrentlyunlocked}</strong><br />{$LANG.domaincurrentlyunlockedexp}{/capture}
             {include file="$template/includes/alert.tpl" type="error" msg=$smarty.capture.domainUnlockedMsg}
         {/if}
@@ -297,4 +318,3 @@
         {/if}
     </div>
 </div>
-
